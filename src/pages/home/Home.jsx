@@ -3,6 +3,7 @@ import Featured from "../../components/Featured/Featured"
 import Navbar from "../../components/Navbar/Navbar"
 import Sidebar from "../../components/Sidebar/Sidebar"
 import Widget from "../../components/Widget/Widget"
+import Table from "../../components/Table/Table"
 import "./Home.scss"
 
 const Home = () => {
@@ -21,9 +22,12 @@ const Home = () => {
           <Featured />
           <Chart title="Last 6 Months (Revenue)" aspect={2 / 1} />
         </div>
+        <div className="listContainer">
+          <div className="listTitle">Latest Transactions</div>
+          <Table />
+        </div>
       </div>
     </div>
-  )
-}
-
+  );
+};
 export default Home
